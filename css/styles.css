@@ -1,0 +1,490 @@
+/* ZMIENNE */
+:root {
+    --color-active: #2196F3;
+    --text-main: #212121;
+    --text-secondary: #757575;
+    --text-h1: #FFFFFF;
+    --text-active-button: #FFFFFF;
+    --text-address: #FFFFFF;
+    --text-studio-footer: #FFFFFF;
+    --color-team-members-background: #FFFFFF;
+    --color-h1-footer-background: #2F303A;
+    --text-footer-contact: rgba(255, 255, 255, 0.6);
+    --color-button-background: #F5F4FA;
+    --color-our-team-background: #F5F4FA;
+    --text-studio-header: #000000;
+    --color-portfolio-border: #EEEEEE;
+    --color-header-border: #ECECEC;
+}
+/* KONIEC: ZMIENNE */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.Webstudio-header,
+.Webstudio-footer,
+.header,
+.footer,
+.address {
+    text-decoration: none;
+}
+
+.Web {
+    color: var(--color-active);
+    font-weight: 700;
+}
+
+/* USTAWIENIA DLA HEADERÓW I FOOTERÓW, BEZ FLEXBOXÓW */
+
+.Webstudio-header {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-studio-header);
+}
+
+.Webstudio-footer {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-studio-footer);
+}
+
+.Webstudio-header:hover, .Webstudio-header:focus {
+    color: var(--text-studio-header);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Webstudio-footer:hover, .Webstudio-footer:focus {
+    color: var(--text-studio-footer);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Webstudio-header,
+.header,
+.footer {
+    color: var(--text-main);
+}
+
+.header {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}
+
+.header:hover,
+.header:focus {
+    color: var(--color-active);
+    font-weight: 500;
+}
+
+.address {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-address);
+    background-color: var(--color-h1-footer-background);
+    font-style: normal;
+}
+
+.footer {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-footer-contact);
+    background-color: var(--color-h1-footer-background);
+}
+
+footer {
+    background-color: var(--color-h1-footer-background);
+}
+
+.footer:hover,
+.footer:focus {
+    color: var(--color-active);
+}
+
+footer a span {
+    color: var(--text-studio-footer);
+}
+
+/* KONIEC: USTAWIENIA DLA HEADERÓW I FOOTERÓW, BEZ FLEXBOXÓW */
+
+/* USTAWIENIA DLA BODY INDEXU, BEX FLEXBOXÓW */
+
+.headline {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-h1);
+    background-color: var(--color-h1-footer-background);
+}
+
+.order-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-active-button);
+    background: var(--color-active);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+
+.p-title {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.article {
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: var(--text-secondary);
+}
+
+.section-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.our-team-div {
+    height: 648px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--color-our-team-background);
+}
+
+.fig-our-team {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--color-team-members-background);
+    box-shadow: 1px 1px 3px 1px
+                rgba(0, 0, 0, 0.2);
+            }
+
+.title-index {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.desc-index {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+}
+
+/* KONIEC: USTAWIENIA DLA BODY INDEXU, BEX FLEXBOXÓW */
+
+/* USTAWIENIA DLA BODY PORTFOLIO, BEZ FLEXBOXÓW */
+
+.portf-buttons {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    background: var(--color-button-background);
+    border-radius: 4px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.portf-buttons:hover, .portf-buttons:focus{
+    color: var(--text-active-button);
+    background: var(--color-active);
+}
+
+.title-portf {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.desc-portf {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* KONIEC: USTAWIENIA DLA BODY PORTFOLIO, BEZ FLEXBOXÓW */
+
+/* USTAWIENIA POZYCJONOWANIA I FLEXBOXÓW WSPÓLNE DLA INDEXU I PORTFOLIO */
+
+h1, h2, h3, h4, h5, h6, p, ul, figure {
+    margin: 0px;
+}
+
+.container {
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.box-menu {
+    margin-top: 24px;
+    display: flex;
+    height: 60px;
+    align-items: baseline;
+    border-bottom: solid var(--color-header-border) 1px;
+}
+
+.box-webstudio {
+    margin-left: 215px;
+}
+
+.header:nth-child(2) {
+    margin-left: 93px;
+}
+
+.header:nth-child(3) {
+    margin-left: 46px;
+}
+
+.header:nth-child(4) {
+    margin-left: 46px;
+}
+
+.contact:nth-child(1) {
+    margin-left: 371px;
+}
+
+.contact:nth-child(2) {
+    margin-left: 50px;
+}
+
+footer div {
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
+}
+
+.Webstudio-footer {
+    display: block;
+    margin-bottom: 20px;
+}
+
+address {
+    display: block;
+    margin-bottom: 9px;
+}
+
+footer .footer {
+    display: block;
+}
+
+a[href="mailto:info@example.com"] {
+    margin-bottom: 9px;
+}
+
+/* KONIEC: USTAWIENIA POZYCJONOWANIA I FLEXBOXÓW WSPÓLNE DLA INDEXU I PORTFOLIO */
+
+/* FLEXBOXY I POZYCJONOWANIE INDEX.HTML*/
+.headline {
+    width: 696px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-headline {
+    padding: 200px 252px 280px 252px;
+    background-color: var(--color-h1-footer-background);
+}
+
+.order-button {
+    margin-left: 448px;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.list-our-strengths {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-left: 0px;
+}
+
+.strength:nth-child(1) {
+    margin-left: 215px;
+}
+
+.strength:not(:last-child) {
+    margin-right: 30px;
+}
+
+.article {
+    padding-top: 10px;
+    padding-bottom: 94px;
+}
+
+.section-name {
+display: flex;
+justify-content: center;
+padding-bottom: 50px;
+}
+
+.list-what-we-do {
+    display: flex;
+    padding-bottom: 94px;
+    padding-left: 0px;
+}
+
+.what-we-do:nth-child(1) {
+    margin-left: 215px;
+}
+
+.what-we-do:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-our-team {
+    display: flex;
+    padding: 0px;
+}
+
+.our-team:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-team:nth-child(1) {
+    margin-left: 215px;
+}
+
+.title-index {
+    padding-top: 30px;
+}
+
+.desc-index {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.our-team {
+    text-align: center;
+}
+
+.img-team-member {
+    display: block;
+}
+
+/* KONIEC: FLEXBOXY I POZYCJONOWANIE INDEX.HTML */
+
+/* FLEXBOXY I POZYCJONOWANIE PORTFOLIO.HTML */
+
+.list-buttons {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 56px;
+    padding-left: 0px;
+}
+
+.portf-buttons {
+    padding: 6px 22px;
+}
+
+.button:nth-child(1) {
+    margin-left: 510px;
+}
+
+.button:nth-child(2) {
+    margin-left: 8px;
+}
+
+.button:nth-child(3) {
+    margin-left: 8px;
+}
+
+.button:nth-child(4) {
+    margin-left: 8px;
+}
+
+.button:nth-child(5) {
+    margin-left: 8px;
+}
+
+.img-portfolio {
+    display: block;
+}
+
+.list-portfolio {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figcap-portfolio {
+    border-bottom: solid var(--color-portfolio-border) 1px;
+}
+
+.title-portf {
+    padding-left: 23px;
+    padding-top: 20px;
+}
+
+
+.desc-portf {
+    padding-left: 23px;
+    padding-top: 4px;
+    padding-bottom: 19px;
+}
+
+.li-portfolio:nth-child(3n + 1) {
+    margin-left: 215px;
+}
+
+.li-portfolio:nth-child(3n + 2) {
+    margin-left: 30px;
+}
+
+.li-portfolio:nth-child(3n + 3) {
+    margin-left: 30px;
+}
+
+.li-portfolio:nth-last-child(n + 4) {
+    margin-bottom: 30px;
+}
+
+.li-portfolio:nth-child(n + 7) {
+    margin-bottom: 94px;
+}
+
+/* KONIEC: FLEXBOXY I POZYCJONOWANIE PORTFOLIO.HTML */
